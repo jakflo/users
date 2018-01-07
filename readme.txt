@@ -8,6 +8,9 @@ Powered by Nette framework.
 
 Web Server Setup
 ----------------
+Start up DB with 'users.sql'.
+Edit '\app\entities\DBwrap.php' to setup DB connection.
+
 You need to start server with 'www' webroot.
 
 The simplest way to get started is to start the built-in PHP server in the root directory of your project:
