@@ -1,0 +1,16 @@
+h1 {color: blue;}
+span.href_by_js {color: blue;
+                text-decoration: underline;
+                cursor: pointer;
+}
+span.href_by_js:hover {color: green; text-decoration: underline;}
+td.form_err {color: red;}
+
+table.st_tab, table.st_tab tr th, table.st_tab tr td {border: 1px solid black;
+              border-collapse: collapse;
+              text-align: left;
+              vertical-align: middle;
+            }
+table.st_tab tr th, table.st_tab tr td {padding: 4px 8px;}
+table.st_tab tr th {background-color: cyan;}
+table.st_tab tr.marked td {background-color: greenyellow;}

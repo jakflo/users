@@ -1,0 +1,17 @@
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<h1>
+    Vítejte 
+    {if $role == "admin"}
+        správče 
+    {else}
+        uživateli 
+    {/if}
+
+    {$name}!
+</h1>
+<h2>Co si přejete udělat?</h2>
+<a href="Logged/display_list"><button>zobrazit seznam</button></a>
+<a href="Logged/?do=logout"><button>odhlásit se</button></a>
+
+

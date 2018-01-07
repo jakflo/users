@@ -1,0 +1,31 @@
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<h1>Seznam uživatelů</h1>
+
+<table class="st_tab">
+    <tr>
+        <th>Jméno</th>
+        <th>Email</th>
+        <th>Oprávnění</th>
+    </tr>
+    {foreach $users_list as $row}
+        {if $row->name == $name}
+            <tr class="marked">
+            {else}
+                <tr>
+        {/if}
+        
+        <td>
+            {$row->name}
+        </td>
+        <td>
+            {$row->email}
+        </td>
+        <td>
+            {$row->role}
+        </td>
+        </tr>
+    {/foreach}
+</table>
+
+<a href="/Logged"><button>Zpět</button></a>
